@@ -105,8 +105,11 @@ int main() {
 				printf("Produto: %.2f\n", calculo);
 				break;
 			case 4:
-				calculo = numeroum / numerodois;
-				printf("Divisão: %.2f\n", calculo);
+				if(numerodois != 0){
+					calculo = numeroum / numerodois;
+					printf("Divisão: %.2f\n", calculo);
+				}
+				printf("Não existe divisão por zero.\n");
 				break;
 			default:
 				printf("Valor inválido!\n");
